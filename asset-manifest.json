@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/harvest/static/css/main.1cfde3ef.css",
+    "main.js": "/harvest/static/js/main.81f7cd92.js",
+    "static/js/769.b98091f4.chunk.js": "/harvest/static/js/769.b98091f4.chunk.js",
+    "static/js/336.a26e9b5d.chunk.js": "/harvest/static/js/336.a26e9b5d.chunk.js",
+    "static/js/261.bcc6a522.chunk.js": "/harvest/static/js/261.bcc6a522.chunk.js",
+    "static/js/337.b9d96f13.chunk.js": "/harvest/static/js/337.b9d96f13.chunk.js",
+    "static/js/203.3b40c74e.chunk.js": "/harvest/static/js/203.3b40c74e.chunk.js",
+    "static/js/934.be726982.chunk.js": "/harvest/static/js/934.be726982.chunk.js",
+    "static/js/161.c0d004b4.chunk.js": "/harvest/static/js/161.c0d004b4.chunk.js",
+    "static/js/716.e4fa67d8.chunk.js": "/harvest/static/js/716.e4fa67d8.chunk.js",
+    "static/js/27.d1a6499d.chunk.js": "/harvest/static/js/27.d1a6499d.chunk.js",
+    "service-worker.js": "/harvest/service-worker.js",
+    "index.html": "/harvest/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.1cfde3ef.css",
+    "static/js/main.81f7cd92.js"
+  ]
+}

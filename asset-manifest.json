@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/harvest/static/css/main.1cfde3ef.css",
-    "main.js": "/harvest/static/js/main.fdb92c2d.js",
+    "main.js": "/harvest/static/js/main.c430c1c6.js",
     "static/js/769.b98091f4.chunk.js": "/harvest/static/js/769.b98091f4.chunk.js",
     "static/js/336.a26e9b5d.chunk.js": "/harvest/static/js/336.a26e9b5d.chunk.js",
     "static/js/261.bcc6a522.chunk.js": "/harvest/static/js/261.bcc6a522.chunk.js",
@@ -16,6 +16,6 @@
   },
   "entrypoints": [
     "static/css/main.1cfde3ef.css",
-    "static/js/main.fdb92c2d.js"
+    "static/js/main.c430c1c6.js"
   ]
 }

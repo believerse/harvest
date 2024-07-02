@@ -441,7 +441,7 @@ const Main = ({ colorScheme }: { colorScheme: string }) => (
         <Time />
       </Route>
       <Route exact path="/space">
-        <Space isInsider={true} />
+        <Space />
       </Route>
       <Route exact path="/cross">
         <Cross />

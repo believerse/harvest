@@ -61,22 +61,29 @@ const Navigator = ({
           <IonCardHeader>
             <IonCardTitle>
               <h1>Harvest</h1>
-              <h6>
-                Representative identification of the unrepresented faithful
-                truth.
-              </h6>
-              <h6>
-                Searching out and highlighting noteworthy communal updates, deed
-                by deed, commune by commune, day by day.
-              </h6>
+              <IonText color="primary">
+                <h6>
+                  Representative identification of the unrepresented faithful
+                  truth.
+                </h6>
+              </IonText>
+              <IonText color="secondary">
+                <h6>
+                  Searching out and highlighting noteworthy communal
+                  developments, function by function, commune by commune, day by
+                  day.
+                </h6>
+              </IonText>
             </IonCardTitle>
           </IonCardHeader>
           <IonCardContent>
-            <p>
-              The Kingdom of Heaven is like a merchant seeking beautiful pearls,
-              who, when he had found one pearl of great price, went and sold all
-              that he had and bought it.
-            </p>
+            <IonText>
+              <p>
+                The Kingdom of Heaven is like a merchant seeking beautiful
+                pearls, who, when he had found one pearl of great price, went
+                and sold all that he had and bought it.
+              </p>
+            </IonText>
           </IonCardContent>
         </IonCard>
         <section className="ion-padding">

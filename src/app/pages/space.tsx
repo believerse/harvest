@@ -3,19 +3,12 @@ import { useKeyHolder } from '../useCases/useKeyHolder';
 import { useContext, useEffect, useState } from 'react';
 import { AppContext } from '../utils/appContext';
 import Graph from '../components/graph';
-import KeyRankings from '../components/keyRankings';
 
-const Space = ({ isInsider }: { isInsider?: boolean }) => {
+const Space = () => {
   const { selectedKey } = useKeyHolder();
 
-  const {
-    colorScheme,
-    tipHeader,
-    requestTopRankings,
-    topRankings,
-    graph,
-    requestGraph,
-  } = useContext(AppContext);
+  const { colorScheme, tipHeader, graph, requestGraph } =
+    useContext(AppContext);
 
   const tipHeight = tipHeader?.header.height ?? 0;
 
@@ -53,22 +46,13 @@ const Space = ({ isInsider }: { isInsider?: boolean }) => {
 
   const graphDOT = graph(whichKey)?.graph!;
 
-  useEffect(() => {
-    const timeoutId = window.setTimeout(() => {
-      requestTopRankings([]);
-    }, 0);
-    return () => {
-      window.clearTimeout(timeoutId);
-    };
-  }, [requestTopRankings]);
-
   return (
     <PageShell
       renderBody={() => (
         <>
           {!!whichKey && (
             <>
-              {isInsider && !!graphDOT && (
+              {!!graphDOT && (
                 <Graph
                   tipHeight={tipHeight}
                   forKey={whichKey}
@@ -77,12 +61,6 @@ const Space = ({ isInsider }: { isInsider?: boolean }) => {
                   colorScheme={colorScheme}
                 />
               )}
-              <KeyRankings
-                filterKeyPairs={!isInsider}
-                keyRankings={topRankings()}
-                selectedKey={whichKey}
-                setSelectedKey={setPeekGraphKey}
-              />
             </>
           )}
         </>

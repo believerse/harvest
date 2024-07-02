@@ -4,6 +4,7 @@ import fromDot from 'ngraph.fromdot';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { IonCard, IonCardContent } from '@ionic/react';
 import { truncateB64ForGraph } from '../../utils/compat';
+import KeyRankings from '../keyRankings';
 
 interface Node {
   id: number;
@@ -146,9 +147,9 @@ function RepresentationGraph({
   const forceRef = useRef<any>();
 
   const weightRatio = (weight: number) => {
-    if (tipHeight) {
-      return (Number(weight) / Number(tipHeight)) * 50;
-    }
+    // if (tipHeight) {
+    //   return (Number(weight) / Number(tipHeight)) * 50;
+    // }
     return Number(weight);
   };
 
@@ -189,6 +190,12 @@ function RepresentationGraph({
           </div>
         </IonCardContent>
       </IonCard>
+      <KeyRankings
+        keyRankings={graphData.nodes}
+        selectedKey={forKey}
+        setSelectedKey={setForKey}
+      />
+
       {/* <IonCard>
         <IonCardHeader>
           <IonCardSubtitle>
